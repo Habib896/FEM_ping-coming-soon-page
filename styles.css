@@ -6,8 +6,153 @@
   font-family: "Libre Franklin", sans-serif;
 }
 
-footer svg {
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 325px;
+}
+@media (min-width: 600px) {
+  .container {
+    max-width: 645px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 125px;
+}
+main .logo {
+  width: 60px;
+  margin: 75px 0 35px;
+}
+@media (min-width: 600px) {
+  main .logo {
+    width: 75px;
+  }
+}
+main h1 {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+main h1 span {
+  font-weight: 700;
+}
+@media (min-width: 600px) {
+  main h1 {
+    font-size: 3rem;
+  }
+}
+main h2 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 15px 0 25px;
+}
+@media (min-width: 600px) {
+  main h2 {
+    font-size: 1.2rem;
+  }
+}
+main form {
+  width: 90%;
+  margin: 35px 0 65px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  main form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+  }
+}
+main form input, main form button {
+  padding: 15px 25px;
+  width: 100%;
+  border-radius: 25px;
+  border: 0;
+  outline: 0;
+}
+main form input {
+  border: 1px solid #c9c9c9;
+  margin-bottom: 5px;
+}
+@media (min-width: 600px) {
+  main form input {
+    margin: 0;
+  }
+}
+main form input.error {
+  border: 1px solid #ff5263;
+}
+main form span {
+  color: #ff5263;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+  display: none;
+}
+@media (min-width: 600px) {
+  main form span {
+    order: 2;
+    text-align: left;
+    padding-left: 25px;
+  }
+}
+main form button {
+  background: #4f7df3;
+  color: white;
+  font-weight: 600;
+  margin-top: 25px;
+  box-shadow: 0 5px 10px rgba(79, 125, 243, 0.5);
+}
+@media (min-width: 600px) {
+  main form button {
+    margin: 0;
+  }
+}
+main form button:hover {
+  background: #7ea0f6;
+  cursor: pointer;
+}
+main .dashboard {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .social-icons {
+  display: flex;
+}
+footer .social-icons svg {
   fill: #4f7df3;
+  border-radius: 100%;
+  border: #e3e3e3 1px solid;
+  width: 35px;
+  margin: 0 6px;
+}
+footer .social-icons svg:hover {
+  fill: white;
+  background: #4f7df3;
+  cursor: pointer;
+}
+footer p {
+  text-align: center;
+  margin: 25px 0;
+  display: block;
+  font-size: 0.75rem;
+  color: #969696;
 }
 
 /*# sourceMappingURL=styles.css.map */
