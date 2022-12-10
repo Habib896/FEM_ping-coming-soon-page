@@ -42,6 +42,7 @@ main .logo {
 main h1 {
   font-weight: 300;
   font-size: 1.6rem;
+  color: #969696;
 }
 main h1 span {
   font-weight: 700;
@@ -49,6 +50,7 @@ main h1 span {
 @media (min-width: 600px) {
   main h1 {
     font-size: 3rem;
+    color: black;
   }
 }
 main h2 {
