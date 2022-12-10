@@ -46,11 +46,11 @@ main h1 {
 }
 main h1 span {
   font-weight: 700;
+  color: black;
 }
 @media (min-width: 600px) {
   main h1 {
     font-size: 3rem;
-    color: black;
   }
 }
 main h2 {
